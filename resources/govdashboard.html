@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政策ダッシュボード | デジタル庁</title>
+    <meta name="description" content="デジタル化の進捗状況を可視化する政策ダッシュボード">
+    
+    <!-- JDS準拠 Model-A Components CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">デ</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-900">デジタル庁</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../policies/mynumber.html" class="text-gray-700 hover:text-blue-600 font-medium">政策・制度</a>
+                    <a href="../about.html" class="text-gray-700 hover:text-blue-600 font-medium">組織・体制</a>
+                    <a href="../services.html" class="text-gray-700 hover:text-blue-600 font-medium">取組・事業</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- パンくずナビ -->
+    <nav class="bg-gray-50 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="../index.html" class="text-blue-600 hover:text-blue-700">ホーム</a>
+                <span class="text-gray-500">></span>
+                <a href="#" class="text-blue-600 hover:text-blue-700">資料・データ</a>
+                <span class="text-gray-500">></span>
+                <span class="text-gray-900">政策ダッシュボード</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-gradient-to-b from-blue-50 to-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        政策ダッシュボード
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+                        デジタル・ガバメント実行計画の進捗状況を<br>
+                        リアルタイムで可視化・公開しています
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        最終更新: 2024年7月12日 14:00
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 全体サマリー -->
+        <section class="py-8 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-blue-50 rounded-lg p-6 text-center">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">87.2%</div>
+                        <div class="text-sm text-gray-600">総合達成率</div>
+                        <div class="text-xs text-gray-500 mt-1">前月比 +2.3%</div>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-6 text-center">
+                        <div class="text-3xl font-bold text-green-600 mb-2">245</div>
+                        <div class="text-sm text-gray-600">完了施策数</div>
+                        <div class="text-xs text-gray-500 mt-1">/ 285 施策</div>
+                    </div>
+                    <div class="bg-purple-50 rounded-lg p-6 text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">32</div>
+                        <div class="text-sm text-gray-600">進行中施策</div>
+                        <div class="text-xs text-gray-500 mt-1">予定通り</div>
+                    </div>
+                    <div class="bg-orange-50 rounded-lg p-6 text-center">
+                        <div class="text-3xl font-bold text-orange-600 mb-2">8</div>
+                        <div class="text-sm text-gray-600">要注意施策</div>
+                        <div class="text-xs text-gray-500 mt-1">対策実施中</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分野別進捗 -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">分野別進捗状況</h2>
+                <div class="space-y-6">
+                    <!-- 行政サービス -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900">行政サービスのデジタル化</h3>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">92%完了</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                            <div class="bg-green-600 h-3 rounded-full" style="width: 92%"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div>
+                                <span class="font-medium text-gray-900">オンライン手続き化率:</span>
+                                <span class="text-green-600 font-bold">89%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">デジタル化済み手続き:</span>
+                                <span class="text-blue-600 font-bold">1,850件</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">利用者満足度:</span>
+                                <span class="text-purple-600 font-bold">8.2/10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 地方自治体DX -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900">地方自治体DX推進</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">78%完了</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                            <div class="bg-blue-600 h-3 rounded-full" style="width: 78%"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div>
+                                <span class="font-medium text-gray-900">システム標準化率:</span>
+                                <span class="text-blue-600 font-bold">78%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">対応自治体数:</span>
+                                <span class="text-green-600 font-bold">1,394団体</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">クラウド移行率:</span>
+                                <span class="text-purple-600 font-bold">65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- マイナンバーカード -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900">マイナンバーカード普及</h3>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">95%完了</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                            <div class="bg-green-600 h-3 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div>
+                                <span class="font-medium text-gray-900">交付率:</span>
+                                <span class="text-green-600 font-bold">92.3%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">健康保険証利用:</span>
+                                <span class="text-blue-600 font-bold">78%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">スマホ搭載準備:</span>
+                                <span class="text-purple-600 font-bold">実証中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 準公共分野DX -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-gray-900">準公共分野DX</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">65%進行中</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                            <div class="bg-yellow-500 h-3 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div>
+                                <span class="font-medium text-gray-900">医療DX進捗:</span>
+                                <span class="text-blue-600 font-bold">72%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">教育DX進捗:</span>
+                                <span class="text-green-600 font-bold">58%</span>
+                            </div>
+                            <div>
+                                <span class="font-medium text-gray-900">防災DX進捗:</span>
+                                <span class="text-purple-600 font-bold">67%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 月次実績 -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">月次実績推移</h2>
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">主要KPI推移（過去6ヶ月）</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">項目</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">2月</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">3月</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">4月</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">5月</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">6月</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">7月</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm font-medium text-gray-900">総合達成率</td>
+                                        <td class="px-4 py-3 text-sm text-center">78.5%</td>
+                                        <td class="px-4 py-3 text-sm text-center">81.2%</td>
+                                        <td class="px-4 py-3 text-sm text-center">83.8%</td>
+                                        <td class="px-4 py-3 text-sm text-center">85.1%</td>
+                                        <td class="px-4 py-3 text-sm text-center">84.9%</td>
+                                        <td class="px-4 py-3 text-sm text-center text-blue-600 font-bold">87.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm font-medium text-gray-900">マイナンバーカード交付率</td>
+                                        <td class="px-4 py-3 text-sm text-center">88.2%</td>
+                                        <td class="px-4 py-3 text-sm text-center">89.1%</td>
+                                        <td class="px-4 py-3 text-sm text-center">90.3%</td>
+                                        <td class="px-4 py-3 text-sm text-center">91.1%</td>
+                                        <td class="px-4 py-3 text-sm text-center">91.8%</td>
+                                        <td class="px-4 py-3 text-sm text-center text-green-600 font-bold">92.3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm font-medium text-gray-900">オンライン手続き利用率</td>
+                                        <td class="px-4 py-3 text-sm text-center">35.2%</td>
+                                        <td class="px-4 py-3 text-sm text-center">37.8%</td>
+                                        <td class="px-4 py-3 text-sm text-center">39.1%</td>
+                                        <td class="px-4 py-3 text-sm text-center">40.5%</td>
+                                        <td class="px-4 py-3 text-sm text-center">41.2%</td>
+                                        <td class="px-4 py-3 text-sm text-center text-purple-600 font-bold">42.1%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 課題と対策 -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">課題と対策</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">要注意事項</h3>
+                        <div class="space-y-3">
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">地方自治体システム標準化の遅れ</p>
+                                <p class="text-gray-600">一部自治体で技術的課題により進捗が遅延</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">準公共分野DXの進捗遅れ</p>
+                                <p class="text-gray-600">関係者調整に想定以上の時間を要している</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">対策・改善取組</h3>
+                        <div class="space-y-3">
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">技術支援チームの増強</p>
+                                <p class="text-gray-600">専門技術者を追加配置し、個別支援を強化</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">省庁間連携の強化</p>
+                                <p class="text-gray-600">定期的な連絡会議を開催し、課題解決を迅速化</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- データダウンロード -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">データダウンロード</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <span class="text-blue-600 font-bold text-xl">📊</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">月次レポート</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            詳細な分析とコメントを含む月次進捗レポート
+                        </p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md w-full">
+                            PDF ダウンロード
+                        </button>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <span class="text-green-600 font-bold text-xl">📈</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">生データ</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            各種指標の元データ（CSV形式）
+                        </p>
+                        <button class="border border-green-600 text-green-600 hover:bg-green-50 font-medium py-2 px-4 rounded-md w-full">
+                            CSV ダウンロード
+                        </button>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <span class="text-purple-600 font-bold text-xl">📋</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">API仕様書</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            外部システム連携用のAPI仕様書
+                        </p>
+                        <button class="border border-purple-600 text-purple-600 hover:bg-purple-50 font-medium py-2 px-4 rounded-md w-full">
+                            仕様書 ダウンロード
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center mr-2">
+                            <span class="text-white font-bold text-sm">デ</span>
+                        </div>
+                        <span class="font-bold">デジタル庁</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        誰一人取り残されない、人に優しいデジタル化を推進
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">政策・制度</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../policies/mynumber.html" class="hover:text-white">マイナンバーカード</a></li>
+                        <li><a href="#" class="hover:text-white">デジタル原則</a></li>
+                        <li><a href="#" class="hover:text-white">重点計画</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">組織・体制</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../about.html" class="hover:text-white">組織概要</a></li>
+                        <li><a href="../recruitment.html" class="hover:text-white">採用情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="../contact.html" class="hover:text-white">よくあるご質問</a></li>
+                        <li><a href="../contact.html" class="hover:text-white">お問い合わせフォーム</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

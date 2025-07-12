@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>調達情報 | デジタル庁</title>
+    <meta name="description" content="デジタル庁の調達・入札情報について">
+    
+    <!-- JDS準拠 Model-A Components CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">デ</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-900">デジタル庁</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="policies/mynumber.html" class="text-gray-700 hover:text-blue-600 font-medium">政策・制度</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">組織・体制</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">取組・事業</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- パンくずナビ -->
+    <nav class="bg-gray-50 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-blue-600 hover:text-blue-700">ホーム</a>
+                <span class="text-gray-500">></span>
+                <span class="text-gray-900">調達情報</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-gradient-to-b from-blue-50 to-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        調達情報
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        デジタル庁における調達・入札に関する<br>
+                        最新情報をお知らせします
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 重要なお知らせ -->
+        <section class="py-8 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="border-l-4 border-red-500 bg-red-50 p-4 mb-4">
+                    <p class="text-sm text-red-700">
+                        <span class="font-medium">緊急</span>
+                        システム調達に関する入札説明書の訂正について（7月12日更新）
+                    </p>
+                </div>
+                <div class="border-l-4 border-blue-500 bg-blue-50 p-4">
+                    <p class="text-sm text-blue-700">
+                        <span class="font-medium">お知らせ</span>
+                        令和6年度第3四半期調達計画を公表しました（7月10日）
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 調達情報カテゴリ -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">調達情報カテゴリ</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-blue-600 font-bold text-xl">入</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">入札公告</h3>
+                        <p class="text-gray-600 mb-4">
+                            現在募集中の入札案件に関する公告情報。入札説明書のダウンロードも可能です。
+                        </p>
+                        <a href="#bidding" class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                            詳細を見る →
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-green-600 font-bold text-xl">結</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">契約結果</h3>
+                        <p class="text-gray-600 mb-4">
+                            完了した調達案件の契約結果・落札者情報を公開しています。
+                        </p>
+                        <a href="#results" class="text-green-600 hover:text-green-700 font-medium text-sm">
+                            詳細を見る →
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-purple-600 font-bold text-xl">計</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">調達計画</h3>
+                        <p class="text-gray-600 mb-4">
+                            年度および四半期ごとの調達計画を事前に公表しています。
+                        </p>
+                        <a href="#plans" class="text-purple-600 hover:text-purple-700 font-medium text-sm">
+                            詳細を見る →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 現在の入札案件 -->
+        <section id="bidding" class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">現在の入札案件</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="bg-red-100 text-red-800 text-xs font-medium px-2 py-1 rounded mb-2 inline-block">
+                                    締切間近
+                                </span>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    令和6年度 マイナンバーカード管理システム運用・保守業務
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">
+                                    マイナンバーカードの管理システムにおける運用・保守業務に関する一般競争入札
+                                </p>
+                                <div class="flex items-center space-x-6 text-sm text-gray-600">
+                                    <span>入札締切: 2024年7月18日 17:00</span>
+                                    <span>開札予定: 2024年7月19日 10:00</span>
+                                    <span>予定価格: 非公表</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md">
+                                    入札書類
+                                </button>
+                                <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 text-sm font-medium py-2 px-4 rounded-md">
+                                    質問書
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded mb-2 inline-block">
+                                    募集中
+                                </span>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    デジタル政府推進システム改修業務
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">
+                                    政府システムのクラウド化推進に伴うシステム改修・移行業務
+                                </p>
+                                <div class="flex items-center space-x-6 text-sm text-gray-600">
+                                    <span>入札締切: 2024年7月25日 17:00</span>
+                                    <span>開札予定: 2024年7月26日 14:00</span>
+                                    <span>予定価格: 1億2,800万円</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md">
+                                    入札書類
+                                </button>
+                                <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 text-sm font-medium py-2 px-4 rounded-md">
+                                    質問書
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded mb-2 inline-block">
+                                    企画競争
+                                </span>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    次世代行政サービス基盤設計業務
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3">
+                                    2030年を見据えた次世代行政サービス基盤のシステム設計業務
+                                </p>
+                                <div class="flex items-center space-x-6 text-sm text-gray-600">
+                                    <span>提案締切: 2024年8月5日 17:00</span>
+                                    <span>審査予定: 2024年8月中旬</span>
+                                    <span>予定価格: 8,500万円</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md">
+                                    募集要項
+                                </button>
+                                <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 text-sm font-medium py-2 px-4 rounded-md">
+                                    質問書
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 契約結果 -->
+        <section id="results" class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">最近の契約結果</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">契約件名</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">契約者</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">契約金額</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">契約日</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">
+                                    マイナポータル機能拡張業務
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    株式会社〇〇システムズ
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900 font-medium">
+                                    95,040,000円
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    2024年6月28日
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">
+                                    政府共通ネットワーク運用監視業務
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    ○○○テクノロジー株式会社
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900 font-medium">
+                                    158,400,000円
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    2024年6月21日
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">
+                                    e-Gov電子申請システム改修業務
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    株式会社△△△ソリューションズ
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900 font-medium">
+                                    72,600,000円
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-600">
+                                    2024年6月14日
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 text-center">
+                    <button class="border border-gray-600 text-gray-600 hover:bg-gray-50 font-medium py-2 px-6 rounded-md">
+                        すべての契約結果を見る
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 調達ガイドライン -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">調達ガイドライン・資料</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">調達に関する基本方針</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            デジタル庁における調達の基本的な考え方と実施方針について説明しています。
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md inline-block">
+                            PDFダウンロード
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">入札参加資格要件</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            入札に参加するために必要な資格要件と事前準備について詳しく記載しています。
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md inline-block">
+                            PDFダウンロード
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">技術提案評価基準</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            技術提案の評価方法と評価基準について、具体的な項目と配点を説明しています。
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md inline-block">
+                            PDFダウンロード
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">契約書標準ひな形</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            システム開発・運用保守等の業務に関する契約書の標準的なひな形を提供しています。
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-md inline-block">
+                            DOCXダウンロード
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">調達に関するお問い合わせ</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-blue-50 rounded-lg p-6 text-center">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">
+                            調達・入札に関するご質問はこちら
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            入札手続き、技術仕様、契約条件等についてご不明な点がございましたら、<br>
+                            お気軽にお問い合わせください。
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md">
+                                お問い合わせフォーム
+                            </button>
+                            <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-6 rounded-md">
+                                FAQ を見る
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center mr-2">
+                            <span class="text-white font-bold text-sm">デ</span>
+                        </div>
+                        <span class="font-bold">デジタル庁</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        誰一人取り残されない、人に優しいデジタル化を推進
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">政策・制度</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="policies/mynumber.html" class="hover:text-white">マイナンバーカード</a></li>
+                        <li><a href="#" class="hover:text-white">デジタル原則</a></li>
+                        <li><a href="#" class="hover:text-white">重点計画</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">組織・体制</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">組織概要</a></li>
+                        <li><a href="recruitment.html" class="hover:text-white">採用情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-white">お問い合わせフォーム</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

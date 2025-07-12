@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ニュース | デジタル庁</title>
+    <meta name="description" content="デジタル庁の最新ニュース・活動報告">
+    
+    <!-- JDS準拠 Model-A Components CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">デ</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-900">デジタル庁</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="policies/mynumber.html" class="text-gray-700 hover:text-blue-600 font-medium">政策・制度</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">組織・体制</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">取組・事業</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- パンくずナビ -->
+    <nav class="bg-gray-50 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-blue-600 hover:text-blue-700">ホーム</a>
+                <span class="text-gray-500">></span>
+                <span class="text-gray-900">ニュース</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-gradient-to-b from-blue-50 to-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        ニュース
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        デジタル庁の最新情報・活動報告・<br>
+                        政策の進捗状況をお知らせします
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- フィルター -->
+        <section class="py-6 bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center gap-4">
+                    <span class="text-sm font-medium text-gray-900">カテゴリで絞り込み:</span>
+                    <button class="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-md">
+                        すべて
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm font-medium px-4 py-2 rounded-md">
+                        政策発表
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm font-medium px-4 py-2 rounded-md">
+                        システム更新
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm font-medium px-4 py-2 rounded-md">
+                        イベント
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 text-sm font-medium px-4 py-2 rounded-md">
+                        お知らせ
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注目ニュース -->
+        <section class="py-8 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">注目ニュース</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <article class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                            <span class="text-white text-6xl">📱</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2 py-1 rounded mb-3 inline-block">
+                                重要発表
+                            </span>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                                マイナンバーカード機能のスマートフォン搭載開始
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                令和7年度から、マイナンバーカード機能をスマートフォンに搭載するサービスを開始します。より便利で安全なデジタル社会の実現に向けた大きな一歩です。
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">2024年7月12日</span>
+                                <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                    詳細を読む →
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
+                            <span class="text-white text-6xl">🏛️</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded mb-3 inline-block">
+                                DX推進
+                            </span>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                                地方自治体DX推進計画の大幅改定
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                全国の地方自治体におけるDX推進を加速するため、支援策を大幅に拡充しました。システム標準化とクラウド移行を重点的に支援します。
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">2024年7月10日</span>
+                                <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                    詳細を読む →
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新ニュース -->
+        <section class="py-8 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">最新ニュース</h2>
+                <div class="space-y-6">
+                    <article class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">
+                                    システム更新
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    マイナポータル機能拡張のお知らせ
+                                </h3>
+                                <p class="text-gray-600 mb-3">
+                                    マイナポータルに新たに「家族まとめて申請」機能を追加しました。ご家族の各種手続きを一括で申請できるようになります。
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2024年7月11日</span>
+                                    <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                        詳細を読む
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">
+                                    イベント
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    「デジタル庁見学会」の開催について
+                                </h3>
+                                <p class="text-gray-600 mb-3">
+                                    7月20日（土）に一般向けのデジタル庁見学会を開催します。最新のデジタル技術やセキュリティ対策について詳しくご紹介します。
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2024年7月9日</span>
+                                    <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                        申込み方法を見る
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">
+                                    政策発表
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    政府情報システムのクラウド化加速策について
+                                </h3>
+                                <p class="text-gray-600 mb-3">
+                                    「クラウド・バイ・デフォルト」原則に基づき、政府情報システムのクラウド移行をさらに加速させる具体策を発表しました。
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2024年7月8日</span>
+                                    <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                        政策資料を見る
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2 py-1 rounded">
+                                    お知らせ
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    デジタル人材募集説明会の開催
+                                </h3>
+                                <p class="text-gray-600 mb-3">
+                                    デジタル庁で働くエンジニア・デザイナー・企画職の募集説明会を7月15日（月）に開催します。オンライン参加も可能です。
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2024年7月5日</span>
+                                    <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                        参加申込み
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">
+                                    システム更新
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                                    e-Gov電子申請システムの機能改善
+                                </h3>
+                                <p class="text-gray-600 mb-3">
+                                    e-Gov電子申請システムの応答速度向上とユーザビリティ改善を実施しました。より快適にご利用いただけます。
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500">2024年7月3日</span>
+                                    <button class="text-blue-600 hover:text-blue-700 font-medium text-sm">
+                                        改善内容を見る
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 月別アーカイブ -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">月別アーカイブ</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <button class="bg-blue-50 hover:bg-blue-100 text-blue-800 font-medium py-3 px-4 rounded-md text-center">
+                        2024年7月<br><span class="text-sm font-normal">(15件)</span>
+                    </button>
+                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-3 px-4 rounded-md text-center">
+                        2024年6月<br><span class="text-sm font-normal">(22件)</span>
+                    </button>
+                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-3 px-4 rounded-md text-center">
+                        2024年5月<br><span class="text-sm font-normal">(18件)</span>
+                    </button>
+                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-3 px-4 rounded-md text-center">
+                        2024年4月<br><span class="text-sm font-normal">(25件)</span>
+                    </button>
+                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-3 px-4 rounded-md text-center">
+                        2024年3月<br><span class="text-sm font-normal">(31件)</span>
+                    </button>
+                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium py-3 px-4 rounded-md text-center">
+                        2024年2月<br><span class="text-sm font-normal">(19件)</span>
+                    </button>
+                </div>
+                <div class="mt-6 text-center">
+                    <button class="border border-gray-600 text-gray-600 hover:bg-gray-50 font-medium py-3 px-6 rounded-md">
+                        すべてのアーカイブを見る
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSS・メルマガ -->
+        <section class="py-12 bg-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">最新情報をお届け</h2>
+                    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                        デジタル庁の最新ニュースをRSSフィードやメールマガジンでお受け取りいただけます
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-8 rounded-md">
+                            RSS フィード
+                        </button>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md">
+                            メルマガ登録
+                        </button>
+                        <button class="border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-8 rounded-md">
+                            LINE 公式アカウント
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ページネーション -->
+        <section class="py-8 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-center space-x-2">
+                    <button class="border border-gray-300 text-gray-500 hover:bg-gray-50 px-3 py-2 rounded-md">
+                        &lt;
+                    </button>
+                    <button class="bg-blue-600 text-white px-3 py-2 rounded-md">
+                        1
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-md">
+                        2
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-md">
+                        3
+                    </button>
+                    <span class="text-gray-500">...</span>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-md">
+                        10
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-md">
+                        &gt;
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center mr-2">
+                            <span class="text-white font-bold text-sm">デ</span>
+                        </div>
+                        <span class="font-bold">デジタル庁</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        誰一人取り残されない、人に優しいデジタル化を推進
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">政策・制度</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="policies/mynumber.html" class="hover:text-white">マイナンバーカード</a></li>
+                        <li><a href="#" class="hover:text-white">デジタル原則</a></li>
+                        <li><a href="#" class="hover:text-white">重点計画</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">組織・体制</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">組織概要</a></li>
+                        <li><a href="recruitment.html" class="hover:text-white">採用情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-white">お問い合わせフォーム</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
