@@ -1,0 +1,83 @@
+<template>
+  <div class="space-y-8">
+    <!-- ページヘッダー -->
+    <div class="text-center">
+      <h1 class="text-heading-1 font-bold text-neutral-900 mb-4">
+        ECサイト向けコンポーネント（テスト版）
+      </h1>
+      <p class="text-heading-6 text-neutral-600 max-w-3xl mx-auto">
+        オンラインショップ構築に特化したコンポーネント集。まずは基本的な表示から確認します。
+      </p>
+    </div>
+
+    <!-- 基本テスト -->
+    <BaseCard>
+      <div class="p-6">
+        <h2 class="text-heading-4 font-semibold text-neutral-900 mb-4">
+          基本テスト
+        </h2>
+        
+        <!-- RatingStars テスト -->
+        <div class="mb-6">
+          <h3 class="text-heading-5 font-medium text-neutral-900 mb-3">RatingStars テスト</h3>
+          <div class="p-4 bg-neutral-50 rounded-lg">
+            <RatingStars
+              :model-value="4"
+              :show-value="true"
+              size="lg"
+            />
+          </div>
+        </div>
+
+        <!-- PriceDisplay テスト -->
+        <div class="mb-6">
+          <h3 class="text-heading-5 font-medium text-neutral-900 mb-3">PriceDisplay テスト</h3>
+          <div class="p-4 bg-neutral-50 rounded-lg">
+            <PriceDisplay
+              :current-price="2980"
+              :original-price="3980"
+              size="lg"
+              :emphasis="true"
+            />
+          </div>
+        </div>
+
+        <!-- 基本的な商品情報 -->
+        <div class="mb-6">
+          <h3 class="text-heading-5 font-medium text-neutral-900 mb-3">ProductCard テスト</h3>
+          <div class="max-w-sm">
+            <ProductCard
+              :product="testProduct"
+              @add-to-cart="handleAddToCart"
+            />
+          </div>
+        </div>
+      </div>
+    </BaseCard>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import BaseCard from '@/components/base/BaseCard.vue'
+import RatingStars from '@/components/base/RatingStars.vue'
+import PriceDisplay from '@/components/ecommerce/PriceDisplay.vue'
+import ProductCard from '@/components/ecommerce/ProductCard.vue'
+
+// シンプルなテスト用商品データ
+const testProduct = ref({
+  id: 1,
+  name: 'テスト商品',
+  image: 'https://picsum.photos/400/400?random=1',
+  price: 2980,
+  originalPrice: 3980,
+  rating: 4.2,
+  reviewCount: 32,
+  stock: 5
+})
+
+const handleAddToCart = (data) => {
+  console.log('Add to cart:', data)
+  alert(`${data.product.name} をカートに追加しました`)
+}
+</script>
