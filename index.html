@@ -1,23 +1,185 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client client-digital-agency-clone</title>
-    <meta name="description" content="Client client-digital-agency-clone - Model-A継承デザインシステム">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタル庁 - Model-A Design System Clone</title>
+    <meta name="description" content="誰一人取り残されない、人に優しいデジタル化を実現">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="author" content="nagatsu dev AI Team">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+    <!-- JDS準拠 Model-A Components CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">デ</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-900">デジタル庁</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="policies/mynumber.html" class="text-gray-700 hover:text-blue-600 font-medium">政策・制度</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">組織・体制</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">取組・事業</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-gradient-to-b from-blue-50 to-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    デジタル社会の実現に向けた<br>政府の司令塔機能
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    誰一人取り残されない、人に優しいデジタル化を目指し、<br>
+                    国民や事業者のニーズに応える質の高いサービスの提供を推進します。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="services.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md">
+                        重要な取組を見る
+                    </a>
+                    <a href="about.html" class="border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-8 rounded-md">
+                        デジタル庁について
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">重要なお知らせ</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-red-500 bg-red-50 p-4">
+                        <p class="text-sm text-red-700">
+                            <span class="font-medium">緊急</span>
+                            マイナンバーカード申請システムの一時停止について（2024年7月12日）
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded mb-2 inline-block">新着</span>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">
+                            デジタル原則に照らした規制の一括見直しプランの改定について
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            デジタル時代に適した規制へと見直すため、デジタル原則に照らした規制の一括見直しプランを改定しました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要な取組 -->
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">主要な取組</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">マイナンバーカード</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            安全・便利なデジタル社会の基盤となるマイナンバーカードの普及促進
+                        </p>
+                        <a href="policies/mynumber.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                            詳細を見る →
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">行政のデジタル化</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            国民の利便性向上と行政運営の効率化を目指した各種手続きのデジタル化
+                        </p>
+                        <a href="services.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                            詳細を見る →
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">デジタル人材の育成</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            デジタル社会を支える人材の育成と国民のデジタルリテラシー向上
+                        </p>
+                        <a href="recruitment.html" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                            詳細を見る →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 統計 -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">デジタル化の進捗</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">92.3%</div>
+                        <div class="text-sm text-gray-600">マイナンバーカード交付率</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-600 mb-2">1,850</div>
+                        <div class="text-sm text-gray-600">デジタル化済み手続き数</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">78%</div>
+                        <div class="text-sm text-gray-600">地方自治体DX対応率</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-600 mb-2">65万</div>
+                        <div class="text-sm text-gray-600">デジタル人材育成数</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center mr-2">
+                            <span class="text-white font-bold text-sm">デ</span>
+                        </div>
+                        <span class="font-bold">デジタル庁</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        誰一人取り残されない、人に優しいデジタル化を推進
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">政策・制度</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="policies/mynumber.html" class="hover:text-white">デジタル社会形成基本法</a></li>
+                        <li><a href="#" class="hover:text-white">デジタル原則</a></li>
+                        <li><a href="#" class="hover:text-white">重点計画</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">組織・体制</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">組織概要</a></li>
+                        <li><a href="recruitment.html" class="hover:text-white">採用情報</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">お問い合わせ</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white">よくあるご質問</a></li>
+                        <li><a href="contact.html" class="hover:text-white">お問い合わせフォーム</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
