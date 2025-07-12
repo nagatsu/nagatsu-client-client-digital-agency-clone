@@ -24,6 +24,9 @@ import MediaPage from '@/pages/MediaPage.vue'
 import AdminPage from '@/pages/AdminPage.vue'
 import CryptoPage from '@/pages/CryptoPage.vue'
 
+// Government Site Clone for Issue #109 Verification
+import DigitalAgencyClone from '@/pages/DigitalAgencyClone.vue'
+
 const routes = [
   {
     path: '/',
@@ -100,6 +103,12 @@ const routes = [
         path: 'crypto',
         name: 'crypto',
         component: CryptoPage
+      },
+      // Government Site Clone - Issue #109 Verification
+      {
+        path: 'digital-agency-clone',
+        name: 'digital-agency-clone',
+        component: DigitalAgencyClone
       }
     ]
   }
